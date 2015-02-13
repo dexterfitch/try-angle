@@ -1,8 +1,52 @@
-#result {
-  display: none;
+body {
+  color: rgba(0, 100, 75, 1);
+  background: rgba(207, 246, 90, 1);
+
+}
+
+form {
+  margin: 2em 0;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Bree Serif', serif;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+hr {
+  border-color: rgba(91, 117, 91, 0.5);
 }
 
 input {
-  display: block;
-  margin-bottom: 1em;
+  margin: 0 1em 1em 0;
+}
+
+input:focus {
+  border-color: rgba(64, 215, 0, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(64, 215, 0, 0.6);
+  outline: 0 none;
+}
+
+.btn-custom {
+  background-color: rgba(0, 100, 75, 1);
+}
+
+.btn-custom:hover, .btn-custom:active {
+  box-shadow: 0 0 10px rgba(64, 215, 0, 1);
+}
+
+.btn-custom, .btn-custom:hover, .btn-custom:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.content {
+  text-align: center;
+}
+
+#result {
+  display: none;
 }

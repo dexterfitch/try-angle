@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<script src="js/jquery-1.11.2.js"></script>
@@ -9,26 +11,30 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Try-Angle!</h1>
-		<h3>Enter the side-measurements of a triangle below to calculate its type.<h3>
+		<h1><i class="fa fa-caret-square-o-up"></i> Try-Angle!</h1>
+		<hr>
+			<div class ="content">
+				<h3>Enter the side-measurements of a triangle below to calculate its type.</h3>
 
-		<form id="triangle">
-			<div class="form-group">
-				<label for="side1">Side 1:</label>
-				<input id="side1" type="text" autofocus>
+				<form id="triangle">
+					<div class="form-group">
+						<label for="side1">Side 1:</label>
+						<input id="side1" type="text" autofocus>
 
-				<label for="side2">Side 2:</label>
-				<input id="side2" type="text">
+						<label for="side2">Side 2:</label>
+						<input id="side2" type="text">
 
-				<label for="side3">Side 3:</label>
-				<input id="side3" type="text">
+						<label for="side3">Side 3:</label>
+						<input id="side3" type="text">
+					</div>
+					<button class="btn btn-custom">Totally Pythagorean!</button>
+				</form>
 
-				<button class="btn btn-primary">Pythagoras!</button>
-			</div>
-		</form>
+				<hr>
 
-			<div id="result">
-				<p>Your measurements [<span id="side-one"></span>, <span id="side-two"></span>, <span id="side-three"></span>] are <span id="triangle-result"></span>.</p>
+				<div id="result">
+					<h3>Your measurements [<span id="side-one"></span>, <span id="side-two"></span>, <span id="side-three"></span>] are <span id="triangle-result"></span>.</h3>
+				</div>
 			</div>
 		</div>
 </body>
