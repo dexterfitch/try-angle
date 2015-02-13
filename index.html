@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.2.js"></script>
+	<script src="js/scripts.js"></script>
+	<title>Try-Angle!</title>
 </head>
 <body>
+	<div class="container">
+		<h1>Try-Angle!</h1>
+		<h3>Enter the side-measurements of a triangle below to calculate its type.<h3>
 
+		<form id="triangle">
+			<div class="form-group">
+				<label for="side1">Side 1:</label>
+				<input id="side1" type="text" autofocus>
+
+				<label for="side2">Side 2:</label>
+				<input id="side2" type="text">
+
+				<label for="side3">Side 3:</label>
+				<input id="side3" type="text">
+
+				<button class="btn btn-primary">Pythagoras!</button>
+			</div>
+		</form>
+
+			<div id="result">
+				<p>Your measurements (<span id="side-one"></span>, <span id="side-two"></span>, <span id="side-three"></span>) are <span id="triangle-result"></span>.</p>
+			</div>
+		</div>
 </body>
 </html>
