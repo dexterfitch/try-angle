@@ -1,4 +1,7 @@
 var triangleSolver = function(side1, side2, side3) {
+	var side1 = parseInt(side1);
+	var side2 = parseInt(side2);
+	var side3 = parseInt(side3);
 	var equilateral = "equilateral";
 	var isoceles = "isoceles";
 	var scalene = "scalene";
@@ -39,9 +42,11 @@ $(document).ready(function() {
 		$("#triangle-result").text("");
 		$("#result").hide();
 
-		var side1 = parseInt($("input#side1").val());
-		var side2 = parseInt($("input#side2").val());
-		var side3 = parseInt($("input#side3").val());
+		var side1 = $("input#side1").val();
+		var side2 = $("input#side2").val();
+		var side3 = $("input#side3").val();
+
+		var sides = [side1, side2, side3]
 
 		var triangleType = triangleSolver(side1, side2, side3);
 
