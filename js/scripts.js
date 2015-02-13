@@ -36,11 +36,11 @@ var triangleSolver = function(side1, side2, side3) {
 $(document).ready(function() {
 
 	$("form#triangle").submit(function(event) {
+		$("#result").hide();
 		$("#side-one").text("");
 		$("#side-two").text("");
 		$("#side-three").text("");
 		$("#triangle-result").text("");
-		$("#result").hide();
 
 		var side1 = $("input#side1").val();
 		var side2 = $("input#side2").val();
@@ -54,8 +54,11 @@ $(document).ready(function() {
 		$("#side-two").text(side2);
 		$("#side-three").text(side3);
 		$("#triangle-result").text(triangleType);
-
 		$("#result").show();
+		
+		$("input#side1").val("");
+		$("input#side2").val("");
+		$("input#side3").val("");
 
 		event.preventDefault();
 	});
